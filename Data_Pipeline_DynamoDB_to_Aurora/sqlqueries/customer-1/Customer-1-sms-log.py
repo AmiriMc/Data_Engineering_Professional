@@ -1,0 +1,1 @@
+db_name = 'customer_1_sms_log' # For debugging, this will not be the db name.
