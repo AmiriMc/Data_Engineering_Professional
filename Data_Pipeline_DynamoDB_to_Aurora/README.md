@@ -7,10 +7,10 @@ This data pipeline architecture performs ETL and pipes data from Amazon DynamoDB
 There is a dynamic Plug and Play (PnP) architecture that allows the developer to quickly ETL new DynamoDB tables simply by:
 1. Creating the custom ETL Python script,
 2. ensuring that the filename matches the DynamoDB table name exactly,
-3. and then dropping that script into the `sqlqueries` folder. The program will automatically read these new scripts without any other changes to the other three scripts used in the pipeline.
+3. and then dropping that script into the `sqlqueries` folder. The program will automatically read these new scripts without needing any code changes to the other three scripts used in the pipeline or any changes in configuration to any of the other resources.
 
 ## Features
-* **Scalable and enterprise quality**.
+* **Scalable and enterprise quality**. This data pipeline architecture is essentially serverless and can quickly scale to hundreds of thousands and even millions of parallel executions and is thus robust for production level usage.
 * **Dynamic Plug and Play (PnP) architecture** for adding new SQL Python scripts for the ETL. All files in the PnP folder are checked recursively and every file is inspected and listed if they pass the simple verification steps.
 * The AWS Lambda function scripts are **abstracted** so that they can be used as **templates for reuse**.
 
